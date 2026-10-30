@@ -1,0 +1,3 @@
+Oct 30 09:10:00 server1 sshd[1234]: INFO Accepted publickey for labuser
+Oct 30 09:11:30 server1 sshd[1240]: WARNING Failed password attempt from 192.0.2.10
+Oct 30 09:12:00 server1 sshd[1245]: ERROR Authentication subsystem failure

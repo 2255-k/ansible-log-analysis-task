@@ -1,0 +1,4 @@
+---
+collected_logs_dir: "{{ playbook_dir }}/artifacts/raw_logs"
+reports_dir: "{{ playbook_dir }}/artifacts/reports"
+parser_script: "{{ playbook_dir }}/scripts/parse_logs.py"

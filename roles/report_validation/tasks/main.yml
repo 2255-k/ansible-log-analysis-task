@@ -1,0 +1,4 @@
+---
+# TODO 1: Verify log_summary.txt and matches.csv exist on the control node.
+# TODO 2: Check that the summary contains error/warning counts.
+# TODO 3: Display a short success message only after validation passes.

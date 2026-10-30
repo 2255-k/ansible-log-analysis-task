@@ -1,0 +1,6 @@
+---
+# TODO 1: Create reports_dir on localhost.
+# TODO 2: Run scripts/parse_logs.py with the collected log directory,
+#         summary output path, and CSV output path.
+# Hint: use ansible.builtin.command with argv and delegate_to: localhost.
+# Register the result and report useful failure information.

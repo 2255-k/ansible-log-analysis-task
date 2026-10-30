@@ -1,0 +1,7 @@
+---
+# Override this list in group_vars/all.yml or inventory as needed.
+log_files:
+  - /var/log/syslog
+  - /var/log/auth.log
+artifacts_dir: "{{ playbook_dir }}/artifacts"
+collected_logs_dir: "{{ artifacts_dir }}/raw_logs"

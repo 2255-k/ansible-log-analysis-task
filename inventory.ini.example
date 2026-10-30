@@ -1,0 +1,9 @@
+[log_servers]
+server1 ansible_host=192.168.1.101
+server2 ansible_host=192.168.1.102
+
+[log_servers:vars]
+ansible_user=ubuntu
+# Set the private key path appropriate for your lab. Never commit the key.
+# ansible_ssh_private_key_file=~/.ssh/your-lab-key.pem
+ansible_python_interpreter=/usr/bin/python3

@@ -1,0 +1,9 @@
+---
+# Configure only paths that the SSH user is authorized to read.
+log_files:
+  - /var/log/syslog
+  - /var/log/auth.log
+
+artifacts_dir: "{{ playbook_dir }}/artifacts"
+collected_logs_dir: "{{ artifacts_dir }}/raw_logs"
+reports_dir: "{{ artifacts_dir }}/reports"

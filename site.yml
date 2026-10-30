@@ -1,0 +1,17 @@
+---
+- name: Collect logs from managed Linux servers
+  hosts: log_servers
+  gather_facts: false
+  roles:
+    - log_collector
+
+- name: Parse collected logs and validate reports on the control node
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars:
+    collected_logs_dir: "{{ playbook_dir }}/artifacts/raw_logs"
+    reports_dir: "{{ playbook_dir }}/artifacts/reports"
+  roles:
+    - log_parser
+    - report_validation

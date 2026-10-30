@@ -1,0 +1,8 @@
+---
+# TODO 1: Create the local collection directory on the control node.
+# Hint: use ansible.builtin.file with delegate_to: localhost and run_once: true.
+
+# TODO 2: Fetch each configured log file from each target to the control node.
+# Hint: use ansible.builtin.fetch with a loop over log_files.
+# Use a host-specific directory structure; do not use flat: true.
+# Consider what should happen if a configured log file does not exist.
